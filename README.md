@@ -1,16 +1,38 @@
-# React + Vite
+# Imposter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ett mobilanpassat sällskapsspel byggt med React. En spelare är impostorn och känner inte till ordet – alla andra gör det. Diskutera och rösta fram vem ni tror är impostorn.
 
-Currently, two official plugins are available:
+## Kom igång
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Krav
+- Node.js v22+
+- npm
 
-## React Compiler
+### Installation
+```bash
+git clone https://github.com/ditt-repo/imposter.git
+cd imposter
+npm install
+npm run dev
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Öppna `http://localhost:5173` i webbläsaren.
 
-## Expanding the ESLint configuration
+## Hur man spelar
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Fyll i alla spelarnamn (minst 3)
+2. Tryck **Starta spelet**
+3. Skicka runt mobilen – varje spelare trycker på sitt namn för att se sin roll
+4. Lagmedlemmar ser ett hemligt ord, impostorn ser ingenting
+5. När alla sett sin roll – diskutera vem impostorn är
+6. Rösta – den med mest röster förlorar rundan
+7. Tryck **Ny runda** för att spela igen
+
+## Projektstruktur
+```
+src/
+├── App.jsx        # Huvudkomponent och spellogik
+├── App.css        # All styling
+└── gameLogic.js   # Ord, shuffle och spelstate
+```
+
