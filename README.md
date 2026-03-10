@@ -4,7 +4,7 @@ Ett mobilanpassat sällskapsspel byggt med React. En spelare är impostorn och k
 
 ## Spela
 
-https://rindertanijk1997.github.io/imposter/
+https://imposter.vandijk.se/
 
 ## Hur man spelar
 
